@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+  </head>
+  <body>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div id="popup">
+      <img src="image/icons8-check.gif" alt="" />
+      <h2>Added to the Cart</h2>
+      <button onclick="closePopup()">OK</button>
+    </div>
+    <div class="nav-bar-container">
+      <a href="index.html"><img src="image/logo.png" alt="Logo" id="logo" /></a>
+      <nav class="nav-bar">
+        <a class="a" href="index.html" id="Home-button">Home</a>
+      </nav>
+      <input type="text" placeholder="🔍 Search" />
+      <div class="NLS">
+        <a class="a" href="notification.html"
+          ><img
+            src="image/icons8-notification.gif"
+            alt="notification button"
+            id="notification"
+        /></a>
+        <a class="a" href="Login.html">LOGIN</a>
+        <a class="a" href="signup.html" id="sign-up">Sign Up</a>
+        <a href="Online_ordering.html?#cart-container" id="cart-icon"
+          ><img src="image/icons8-shopping-cart.gif" alt="" /><span
+            id="num-of-books"
+          ></span
+        ></a>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="left-container">
+        <p id="top-para" class="p">ANYWHERE and EVERYWHERE</p>
+        <h1>Book Store</h1>
+        <p class="p">
+          Track your Reading and Build your Library. <br />
+          Discover your next Favourite Book. <br />
+          Browse from the Largest Collections of Ebooks. <br />
+          Read stories from anywhere at anytime.
+        </p>
+        <div class="space1"></div>
+        <button>Get Started</button>
+        <div class="space2"></div>
+        <div class="contact-us">
+          <p id="contact-us-p">Contact us</p>
+          <p>
+            Address: <span>College of Science and Technology Book Store</span>
+          </p>
+          <p>Email: <span>bookstore@gmail.com</span></p>
+        </div>
+        <div class="social-media-links">
+          <img src="image/facebook.webp" alt="facebook icon" />
+          <img src="image/twitter.png" alt="twitter icon" />
+          <img src="image/instagram.png" alt="instagram icon" />
+          <img src="image/youtube.png" alt="youtube icon" />
+        </div>
+      </div>
+      <div class="image-container"></div>
+    </div>
+
+    <div class="feature">
+      <h1>Some of our features</h1>
+      <div class="image-cont">
+        <div>
+          <img class="img" src="image/onlineorder.png" alt="" />
+          <a href="Online_ordering.html" class="dis">Online Ordering</a>
+        </div>
+        <div>
+          <img class="img" src="image/exchange.png" alt="" />
+          <a href="#" class="dis">Used Book Buying</a>
+        </div>
+        <div>
+          <img class="img" src="image/customerservice.png" alt="" />
+          <a href="#" class="dis">24/7 customerservice</a>
+        </div>
+      </div>
+    </div>
+    <div class="trending-container">
+      <div class="trending">TOP TRENDING BOOKS</div>
+      <div class="trending-books-container" id="trending-books"></div>
+    </div>
+    <div class="catagories-container">
+      <div class="catagories-text">Browse Genres</div>
+      <div class="catagories">
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Fiction'"
+        >
+          Fiction
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Science-fiction'"
+        >
+          Science Fiction
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Advanture'"
+        >
+          Adventure
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Biography'"
+        >
+          Biography
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Thriller'"
+        >
+          Thriller
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Love'"
+        >
+          Love
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#History'"
+        >
+          History
+        </div>
+        <div
+          class="cat"
+          onclick="window.location.href='Online_ordering.html#Adult'"
+        >
+          Adult
+        </div>
+      </div>
+    </div>
+    <div class="popular-authors">
+      <div class="author">POPULAR AUTHORS</div>
+      <div class="popular-authors-container">
+        <div class="popular-authors-list" id="popular-authors"></div>
+      </div>
+    </div>
+    <div id="footer">
+      <section id="first-section">
+        <div id="first-first-div">
+          <img
+            id="footer-logo"
+            src="image/logo.png"
+            width="50px"
+            height="50px"
+            alt=""
+          />
+          <h4 id="footer-title">Book Store</h4>
+        </div>
+        <p id="footer-first-section-p">
+          Our book store contains the books <br />
+          from all around the world!
+        </p>
+      </section>
+      <section id="second">
+        <div>
+          <h4 id="quick-link">Quick Links</h4>
+        </div>
+        <div id="quick-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="Online_ordering.html">Shop</a>
+          <a href="help.html">Help</a>
+          <a href="vision.html">Vision</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </section>
+      <section id="third">
+        <div><h4 id="cusomer-area">Customers area</h4></div>
+        <div id="social-ML">
+          <a href="#">My Accont</a>
+          <a href="#">Tracking List </a>
+          <a href="#"> Privacy Policy </a>
+          <a href="FAQ.html"> FAQ </a>
+          <a href="#"> Terms </a>
+        </div>
+      </section>
+      <section id="fourth">
+        <div><h4 id="social-media-heading">Social Media</h4></div>
+        <div>
+          <img
+            class="footer-social-media-image"
+            src="image/facebook.webp"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/instagram.png"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/twitter.png"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/youtube.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="onlineOrdering_script.js"></script>
+  </body>
+</html>

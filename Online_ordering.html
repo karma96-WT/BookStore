@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Ordering</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="online_ordering_style.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+  </head>
+  <body>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div id="popup">
+      <img src="image/icons8-check.gif" alt="" />
+      <h2>Added to the Cart</h2>
+      <button onclick="closePopup()">OK</button>
+    </div>
+    <div class="nav-bar-container">
+      <a href="index.html"><img src="image/logo.png" alt="Logo" id="logo" /></a>
+      <input id="search" type="text" placeholder="🔍 Search" />
+      <div class="NLS">
+        <a class="a" href="notification.html"
+          ><img
+            src="image/icons8-notification.gif"
+            alt="notification button"
+            id="notification"
+        /></a>
+        <a class="a" href="Login.html">LOGIN</a>
+        <a class="a" href="signup.html" id="sign-up">Sign Up</a>
+        <a href="#cart-container" id="cart-icon"
+          ><img src="image/icons8-shopping-cart.gif" alt="" /><span
+            id="num-of-books"
+            >0</span
+          ></a
+        >
+      </div>
+    </div>
+    <div class="Online-ordering-book-container"></div>
+      <div class="searched-books"></div>
+      <div class="trending-container">
+        <div class="trending" id="Fiction">Fiction</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="fiction-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Science-fiction">Science-Fiction</div>
+        <div class="trending-container">
+          <div
+            class="trending-books-container"
+            id="science-fiction-books"
+          ></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Advanture">Advanture</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="advanture-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Biography">Biography</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="biography-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Thriller">Thriller</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="thriller-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Love">Love</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="love-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="History">History</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="history-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="trending-container">
+        <div class="trending" id="Adult">Adult</div>
+        <div class="trending-container">
+          <div class="trending-books-container" id="adult-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div id="cart-container">
+        <div id="heading">My cart</div>
+        <div id="if-empty-cart">Your cart is empty</div>
+        <div id="added-to-cart"></div>
+        <hr />
+        <div id="foot">
+          <h3>Total</h3>
+          <h2 id="total-money">Nu: <span id="grand-total">0.00</span></h2>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <section id="first-section">
+        <div id="first-first-div">
+          <img
+            id="footer-logo"
+            src="image/logo.png"
+            width="50px"
+            height="50px"
+            alt=""
+          />
+          <h4 id="footer-title">Book Store</h4>
+        </div>
+        <p id="footer-first-section-p">
+          Our book store contains the books <br />
+          from all around the world!
+        </p>
+      </section>
+      <section id="second">
+        <div>
+          <h4 id="quick-link">Quick Links</h4>
+        </div>
+        <div id="quick-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="Online_ordering.html">Shop</a>
+          <a href="help.html">Help</a>
+          <a href="vision.html">Vision</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </section>
+      <section id="third">
+        <div><h4 id="cusomer-area">Customers area</h4></div>
+        <div id="social-ML">
+          <a href="#">My Accont</a>
+          <a href="#">Tracking List </a>
+          <a href="#"> Privacy Policy </a>
+          <a href="FAQ.html"> FAQ </a>
+          <a href="#"> Terms </a>
+        </div>
+      </section>
+      <section id="fourth">
+        <div><h4 id="social-media-heading">Social Media</h4></div>
+        <div>
+          <img
+            class="footer-social-media-image"
+            src="image/facebook.webp"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/instagram.png"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/twitter.png"
+            alt=""
+          />
+          <img
+            class="footer-social-media-image"
+            src="image/youtube.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+    <script src="onlineOrdering_script.js"></script>
+  </body>
+</html>

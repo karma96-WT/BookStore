@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="online_ordering_style.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+  </head>
+  <body>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div id="popup">
+      <img src="image/icons8-check.gif" alt="" />
+      <h2>Added to the Cart</h2>
+      <button onclick="closePopup()">OK</button>
+    </div>
+    <div class="nav-bar-container">
+      <a href="index.html"><img src="image/logo.png" alt="Logo" id="logo" /></a>
+      <div class="NLS">
+        <a class="a" href="notification.html"
+          ><img
+            src="image/icons8-notification.gif"
+            alt="notification button"
+            id="notification"
+          /><span id="notification-count">0</span></a
+        >
+        <a class="a" href="Login.html">LOGIN</a>
+        <a class="a" href="signup.html" id="sign-up">Sign Up</a>
+        <a href="#cart-container" id="cart-icon"
+          ><img src="image/icons8-shopping-cart.gif" alt="" /><span
+            id="num-of-notification"
+            >0</span
+          ></a
+        >
+      </div>
+    </div>
+    <div class="notify">
+      <ul class="lists"></ul>
+    </div>
+    <script src="notification.js"></script>
+  </body>
+</html>

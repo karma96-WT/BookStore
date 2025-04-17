@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+  </head>
+  <body>
+    <div class="super-main">
+      <div class="heading">Frequently Asked Questions (FAQs)</div>
+      <div class="main">
+        <ul>
+          <li class="question">
+            How do I place an order?
+            <span
+              >You can place an order by browsing our catalog, adding books to
+              your cart, and checking out using a secure payment method.</span
+            >
+          </li>
+          <li class="question">
+            What payment methods do you accept?
+            <span
+              >We accept major credit/debit cards, PayPal, mBoB, and mPay.</span
+            >
+          </li>
+          <li class="question">
+            Can I cancel or change my order after placing it?
+            <span
+              >Orders can be modified or canceled within 1 hour of placement.
+              Please contact customer support as soon as possible.</span
+            >
+          </li>
+          <li class="question">
+            Do you offer free shipping?
+            <span
+              >Yes, we offer free standard shipping on orders above
+              Nu.1500.</span
+            >
+          </li>
+          <li class="question">
+            How long does delivery take?
+            <span
+              >Standard delivery typically takes 3–7 business days, depending on
+              your location.</span
+            >
+          </li>
+          <li class="question">
+            Can I track my order?
+            <span
+              >Absolutely! You’ll receive a tracking link via email/SMS once
+              your order is shipped.</span
+            >
+          </li>
+          <li class="question">
+            What is your return policy?
+            <span
+              >Books can be returned within 7 days of delivery if they are in
+              original condition and packaging.</span
+            >
+          </li>
+          <li class="question">
+            How do I request a return or refund?
+            <span
+              >You can initiate a return by visiting the My Orders section or
+              contacting our support team.</span
+            >
+          </li>
+          <li class="question">
+            When will I receive my refund?
+            <span
+              >Refunds are processed within 5–7 business days after the returned
+              item is received.
+            </span>
+          </li>
+          <li class="question">
+            Do you take special book requests?
+            <span
+              >Yes! If you're looking for a specific title not listed, contact
+              us and we’ll try to source it for you.</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const Q = document.querySelectorAll(".question");
+      Q.forEach((item) => {
+        item.addEventListener("click", () => {
+          const span = item.querySelector("span");
+          span.style.display =
+            span.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>
